@@ -197,8 +197,8 @@ body {
   font-family: 'PT Sans', sans-serif; }
 
 .header {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   min-height: 650px;
   background-image: url("../img/main-bg-1.jpg");
   -webkit-background-size: cover;
@@ -327,7 +327,7 @@ h1 {
   border-color: #fff; }
 
 .features {
-  width: 100vw;
+  width: 100%;
   height: 900px;
   background-color: #fff; }
 
@@ -398,8 +398,8 @@ h2 {
   transform: translate(-50%, -50%); }
 
 .prices {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   min-height: 650px;
   line-height: 30px;
   color: #000;
@@ -486,8 +486,8 @@ h2 {
   text-align: left; }
 
 .reviews {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   min-height: 650px;
   /* background-color: #f0f3f6; */
   background: url("../img/ rev-bg1.jpg") center no-repeat;
@@ -507,18 +507,18 @@ h2 {
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
-  height: 15vh;
+  height: 100px;
   background-color: #d0d2d3; }
 
 .section__title {
   margin: 0; }
 
 .reviews .container {
+  min-height: 600px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 85vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -563,7 +563,7 @@ h2 {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 85vh;
+  height: 85%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -588,12 +588,12 @@ h2 {
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
-  height: 15vh;
+  height: 100px;
   background-color: #d0d2d3; }
 
 .contact-us {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   min-height: 650px;
   background: url("../img/phone-bg-1.jpg") no-repeat;
   background-color: rgba(0, 0, 0, 0.7);
