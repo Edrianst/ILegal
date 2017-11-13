@@ -1,0 +1,46 @@
+.reviews {
+  background: url("../img/ques-bg.jpg") center center no-repeat;
+  background-size: cover; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.reviews__container {
+  height: 100%;
+}
+
+.reviews__content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+}
+
+.reviews__item {
+  max-height: rem(400px);
+  overflow: auto;
+  flex-basis: 45%;
+  text-align: left;
+  padding: 3%;
+  background-color: rgba(197, 230, 242, 0.714); }
+
+.reviews__text {
+  margin: 1rem 0;
+  line-height: rem(30px); 
+}
+
+.reviews__icon {
+  width: rem(30px);
+  height: rem(30px); 
+}
+
+.question {
+  font-size: 1.1rem;
+}
+
+.answer {
+  font-style: italic;
+}
+
+

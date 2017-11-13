@@ -1,0 +1,20 @@
+// config
+
+@import "config/mixins.scss";
+@import "config/vars.scss";
+
+//layout 
+
+@import "layout/adjustments.scss";
+@import "layout/base.scss";
+@import "layout/fonts.scss";
+
+// sections 
+
+@import "sections/modal.scss";
+@import "sections/header.scss";
+@import "sections/features.scss";
+@import "sections/prices.scss";
+@import "sections/reviews.scss";
+@import "sections/contact-us.scss";
+

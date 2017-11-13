@@ -2,247 +2,294 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-1280, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/normalize.css">
 	<title>iLegal</title>
 </head>
 <body>
-	<header class="header">
-		<div class="container">
-			<div class="header-top">
-				<div class="header_logo"><img src="img/logo.png" alt="Логотип" width="200" height="60" ></div>
-					<ul class="nav-bar" id="menu">
-							<li><a href="#features">lorem</a></li>
-							<li><a href="#prices">lorem</a></li>
-							<li><a href="#reviews">lorem</a></li>
-							<li><a href="#contact-us">lorem</a></li>
-					</ul>
-				<div class="phonenumber"><a href="tel">+7 (999) 999-99-99</a>
-					<span>С 09:00 до 21:00 по московскому времени</span>
+	<div class="wrapper">
+		<header class="header">
+			<div class="container header__container">
+				<div class="header__top">
+					<div class="logo"><img src="img/logo.png" alt="Логотип" width="200" height="60" class="logo__pic"></div>
+						<nav class="nav"></nav>	
+							<ul class="nav__bar" id="menu">
+										<li class="nav__item"><a href="#features" class="nav__link">о компании</a></li>
+										<li class="nav__item"><a href="#prices" class="nav__link">цены</a></li>
+										<li class="nav__item"><a href="#reviews" class="nav__link">Q&A</a></li>
+										<li class="nav__item"><a href="#contact-us" class="nav__link">контакты</a></li>
+							</ul>
+					<div class="phone"><a href="tel" class="phone__link">+7 (999) 999-99-99</a>
+						<span class="phone__desc">С 09:00 до 21:00 по московскому времени</span>
+					</div>
 				</div>
-			</div>
-			<div class="header-main">
-				<h1>I legal</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, eaque.</p>
-				<a href="#contact-us" class="btn">Заказать</a>
-			</div>
-	</header>
-	<section class="features" id="features">
-				<div class="features-content">
-					<div class="features-description">
+				<div class="header__main">
+					<h1 class="header__title">I legal</h1>
+					<p class="header__text">Юрист на дом: экономия средств, сил и времени.<br>
+					Мы берем деньги за реальную помощь, а не за красиые слова и яркие обещания!</p>
+				</div>
+				<div class="header__bottom">
+					<a href="#contact-us" class="btn">Заказать</a>
+				</div>
+		</header>
+		<section class="section features" id="features">
+					<div class="section__description">
 						<div class="container">
-							<h2>Почему мы?</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde veritatis nihil, saepe, debitis minima iste ducimus, doloribus ratione fugiat reprehenderit fuga nesciunt quibusdam? Voluptas voluptate impedit cum in eius assumenda. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat sunt placeat est neque? Ipsum provident sint voluptas doloribus perferendis. Provident.</p>
+							<h2 class="section__title">Почему мы?</h2>
+							<p class="section__desc">Вызов специалиста в удобное время – услуга, которой можно воспользоваться прямо из дома. Достаточно набрать номер или написать краткое письмо, указав суть вопроса. Сомневаетесь в целесообразности этого шага? Значит, вы не имеете представления, как работают настоящие профессионалы, которые помогли более тысячи контрагентам найти выход из сложной ситуации.</p>
 						</div>
 					</div>
-					<div class="features-items">
-						<div class="container">
-							<div class="features-item">
-									<div class="features-item__number"><img src="img/1.png" alt="number" class="number">
+					<div class="features__items">
+						<div class="container features__container">
+							<div class="features__item">
+									<div class="item__number"><img src="img/1.png" alt="number" class="number__pic">
 									</div>
-									<div class="features-item__line"><img src="img/line.png" alt="" class="line" height="70"></div>
-									<div class="features-item__content">
-										<div class="content-wrapper"><img src="img/icon-1.png" alt="icon" class="content-icon"></div>
-										<div class="content-h"><h3>Lorem</h3></div>
-										<div class="content-text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi modi iste commodi aliquam aut aliquid, quae amet atque sint provident.</p></div>
-									</div>
-							</div>
-							<div class="features-item">
-									<div class="features-item__number"><img src="img/2.png" alt="number" class="number">
-									</div>
-									<div class="features-item__line"><img src="img/line.png" alt="" class="line" height="70"></div>
-									<div class="features-item__content">
-										<div class="content-wrapper"><img src="img/icon-2.png" alt="icon" class="content-icon"></div>
-										<div class="content-h"><h3>Lorem</h3></div>
-										<div class="content-text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi modi iste commodi aliquam aut aliquid, quae amet atque sint provident.</p></div>
+									<div class="item__line"><img src="img/line.png" alt="line" height="70" class="line__pic"></div>
+									<div class="item__content">
+										<div class="content__wrapper"><img src="img/icon-1.png" alt="icon" class="content__icon">
+										</div>
+										<div class="content__title"><h3 class="title__text">Конфиденциальность</h3></div>
+										<div class="content__text"><p class="item__text">Через офисы юридической консультации ежедневно проходит масса людей. Поэтому высока вероятность, что случайно подслушанный личный разговор или попавшийся на глаза договор, будут причиной утечки информации. Находясь на собственной территории, клиент уверен, что сведения не станут достоянием гласности, не выйдут за рамку «клиент-юрист».</p>
+										</div>
 									</div>
 							</div>
-							<div class="features-item">
-									<div class="features-item__number"><img src="img/3.png" alt="number" class="number">
+							<div class="features__item">
+									<div class="item__number"><img src="img/2.png" alt="number" class="number__pic">
 									</div>
-									<div class="features-item__line"><img src="img/line.png" alt="" class="line" height="70"></div>
-									<div class="features-item__content">
-										<div class="content-wrapper"><img src="img/icon-3.png" alt="icon" class="content-icon"></div>
-										<div class="content-h"><h3>Lorem</h3></div>
-										<div class="content-text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi modi iste commodi aliquam aut aliquid, quae amet atque sint provident.</p></div>
+									<div class="item__line"><img src="img/line.png" alt="line" height="70" class="line__pic"></div>
+									<div class="item__content">
+										<div class="content__wrapper"><img src="img/icon-2.png" alt="icon" class="content__icon">
+										</div>
+										<div class="content__title"><h3 class="title__text">Профессионализм</h3></div>
+										<div class="content__text"><p class="item__text">Незнание законов не освобождает от их соблюдения. А разобраться в тонкостях семейного, трудового, гражданского права проблематично, особенно на фоне частых поправок нормативно-правовой базы. Юристы нашей команды всегда в курсе изменений в области законодательства, они успешно используют теоретические знания на практике.</p>
+										</div>
 									</div>
 							</div>
-						</div>
-					</div>
-				</div>
-	</section>
-	<section class="prices" id="prices">
-				<div class="prices__content-desc">
-					<h2>Стоимость услуг</h2>
-				</div>
-					<div class="container">
-						<div class="prices__content-catalog">
-							<div class="catalog-item catalog-item__family">
-								<h3 class="catalog-item-text">Семейное<br>право</h3>
-								<a href="#modal" class="btn-small" id="family">Подробнее</a>
-							</div>
-							<div class="catalog-item catalog-item__work">
-								<h3 class="catalog-item-text">Трудовое<br>право</h3>
-								<a href="#modal" class="btn-small" id="work">Подробнее</a>
-							</div>
-							<div class="catalog-item catalog-item__city">
-								<h3 class="catalog-item-text">Гражданское<br>право</h3>
-								<a href="#modal" class="btn-small" id="city">Подробнее</a>
-							</div>
-							<div class="catalog-item catalog-item__other">
-								<h3 class="catalog-item-text">Прочие<br>услуги</h3>
-								<a href="#modal" class="btn-small" id="other">Подробнее</a>
+							<div class="features__item">
+									<div class="item__number"><img src="img/3.png" alt="number" class="number__pic">
+									</div>
+									<div class="item__line"><img src="img/line.png" alt="line" height="70" class="line__pic"></div>
+									<div class="item__content">
+										<div class="content__wrapper"><img src="img/icon-3.png" alt="icon" class="content__icon">
+										</div>
+										<div class="content__title"><h3 class="title__text">Экономия времени</h3></div>
+										<div class="content__text"><p class="item__text">Больше не надо толкаться в метро, бежать за автобусом, стоять в автомобильной пробке, боясь не успеть к назначенному часу. Вызов юриста на дом осуществляется в удобное для заказчика время. Нам важен комфорт клиента, поэтому опоздания полностью исключены.</p>
+										</div>
+									</div>
 							</div>
 						</div>
 					</div>
+		</section>
 
-						<!-- Modal window with price -->
-
-					<div class="modal-overlay city">
-						<div class="modal city">
-							<a class="close-modal">
-								<svg viewBox="0 0 20 20">
-									<path fill="#000000" d="M15.898,4.045c-0.271-0.272-0.713-0.272-0.986,0l-4.71,4.711L5.493,4.045c-0.272-0.272-0.714-0.272-0.986,0s-0.272,0.714,0,0.986l4.709,4.711l-4.71,4.711c-0.272,0.271-0.272,0.713,0,0.986c0.136,0.136,0.314,0.203,0.492,0.203c0.179,0,0.357-0.067,0.493-0.203l4.711-4.711l4.71,4.711c0.137,0.136,0.314,0.203,0.494,0.203c0.178,0,0.355-0.067,0.492-0.203c0.273-0.273,0.273-0.715,0-0.986l-4.711-4.711l4.711-4.711C16.172,4.759,16.172,4.317,15.898,4.045z"></path>
-								</svg>
-							</a>
-							<div class="modal-content">
-								<h3>Гражданское право</h3>
-								<i>Актуальные услуги:</i>
-								<ul>
-									<li>Составление договоров любой сложности - до <b>4000</b> рублей</li>
-									<li>Представительство в судах общей юрисдикции - до <b>2150</b> рублей</li>
-									<li>Сопровождение сделок с недвижимостью - до <b>25 700</b> рублей</li>
-									<li>Урегулирование споров с коллекторами - до <b>5000</b> рублей</li>
-									<li>Отстаивание прав обманутых дольщиков - до <b>55 000</b> рублей (Оплата по факту)</li>
-									<li>Урегулирование споров со страховыми компаниями - до <b></b>14 770</b> рублей</li>
-									<li>Банкротство физических лиц - до <b>12 000</b> рублей</li>
-									<li>Урегулирование споров с интернет магазинами - <b>до 6000</b> рублей</li>
-									<li>Подготовка жалоб, запросов, претензий в гос органы и иные организации - до <b>2000</b> рублей</li>
-								</ul>
-							</div>
-							
-						</div>
-						
+		<section class="section prices" id="prices">
+					<div class="section__description">
+						<h2 class="section__title">Стоимость услуг</h2>
 					</div>
-					<div class="modal-overlay family">
-							<div class="modal family">
+						<div class="container prices__container">
+							<div class="catalog">
+								<div class="catalog__item catalog__item--family">
+									<h3 class="catalog__text">Семейное<br>право</h3>
+									<a href="#modal" class="btn btn--small" id="family">Подробнее</a>
+								</div>
+								<div class="catalog__item catalog__item--work">
+									<h3 class="catalog__text">Трудовое<br>право</h3>
+									<a href="#modal" class=" btn btn--small" id="work">Подробнее</a>
+								</div>
+								<div class="catalog__item catalog__item--city">
+									<h3 class="catalog__text">Гражданское<br>право</h3>
+									<a href="#modal" class="btn btn--small" id="city">Подробнее</a>
+								</div>
+								<div class="catalog__item catalog__item--other">
+									<h3 class="catalog__text">Прочие<br>услуги</h3>
+									<a href="#modal" class="btn btn--small" id="other">Подробнее</a>
+								</div>
+							</div>
+						</div>
+
+							<!-- Modal window with price -->
+
+						<div class="modal-overlay city">
+							<div class="modal city">
 								<a class="close-modal">
 									<svg viewBox="0 0 20 20">
 										<path fill="#000000" d="M15.898,4.045c-0.271-0.272-0.713-0.272-0.986,0l-4.71,4.711L5.493,4.045c-0.272-0.272-0.714-0.272-0.986,0s-0.272,0.714,0,0.986l4.709,4.711l-4.71,4.711c-0.272,0.271-0.272,0.713,0,0.986c0.136,0.136,0.314,0.203,0.492,0.203c0.179,0,0.357-0.067,0.493-0.203l4.711-4.711l4.71,4.711c0.137,0.136,0.314,0.203,0.494,0.203c0.178,0,0.355-0.067,0.492-0.203c0.273-0.273,0.273-0.715,0-0.986l-4.711-4.711l4.711-4.711C16.172,4.759,16.172,4.317,15.898,4.045z"></path>
 									</svg>
 								</a>
 								<div class="modal-content">
-									<h3>Семейное право</h3>
+									<h3>Гражданское право</h3>
 									<i>Актуальные услуги:</i>
 									<ul>
-										<li>Подготовка и подача иска на взыскание алиментов - до <b>4000</b> рублей</li>
-										<li>Представительство в суде - до <b>1500</b> рублей (за 1 заседание) </li>
-									   	<li>Лишение родительских прав - до <b>14 300</b> рублей (под ключ) </li>
-									   	<li>Бракоразводные процессы - до <b>15 000</b> рублей (под ключ) </li>
-									   	<li>Составление договоров - до <b>3000</b> рублей</li>
-										<li>Признание отцовства - до <b>5000</b> рублей </li>
-									   	<li>Усыновление - до <b>25 000</b> рублей</li>
-										<li>Наследство - до <b>23 700</b> рублей</li>
+										<li>Составление договоров любой сложности - до <b>4000</b> рублей</li>
+										<li>Представительство в судах общей юрисдикции - до <b>2150</b> рублей</li>
+										<li>Сопровождение сделок с недвижимостью - до <b>25 700</b> рублей</li>
+										<li>Урегулирование споров с коллекторами - до <b>5000</b> рублей</li>
+										<li>Отстаивание прав обманутых дольщиков - до <b>55 000</b> рублей (Оплата по факту)</li>
+										<li>Урегулирование споров со страховыми компаниями - до <b></b>14 770</b> рублей</li>
+										<li>Банкротство физических лиц - до <b>12 000</b> рублей</li>
+										<li>Урегулирование споров с интернет магазинами - <b>до 6000</b> рублей</li>
+										<li>Подготовка жалоб, запросов, претензий в гос органы и иные организации - до <b>2000</b> рублей</li>
 									</ul>
 								</div>
 								
 							</div>
 							
 						</div>
-						<div class="modal-overlay work">
-								<div class="modal work">
+						<div class="modal-overlay family">
+								<div class="modal family">
 									<a class="close-modal">
 										<svg viewBox="0 0 20 20">
 											<path fill="#000000" d="M15.898,4.045c-0.271-0.272-0.713-0.272-0.986,0l-4.71,4.711L5.493,4.045c-0.272-0.272-0.714-0.272-0.986,0s-0.272,0.714,0,0.986l4.709,4.711l-4.71,4.711c-0.272,0.271-0.272,0.713,0,0.986c0.136,0.136,0.314,0.203,0.492,0.203c0.179,0,0.357-0.067,0.493-0.203l4.711-4.711l4.71,4.711c0.137,0.136,0.314,0.203,0.494,0.203c0.178,0,0.355-0.067,0.492-0.203c0.273-0.273,0.273-0.715,0-0.986l-4.711-4.711l4.711-4.711C16.172,4.759,16.172,4.317,15.898,4.045z"></path>
 										</svg>
 									</a>
 									<div class="modal-content">
-										<h3>Трудовое право</h3>
-										<i>Актуальные услуги:</i> 
+										<h3>Семейное право</h3>
+										<i>Актуальные услуги:</i>
 										<ul>
-											<li>Урегулирование споров с работодателем по выплате з/п - до <b>5000</b> рублей</li>
-											<li>Составление жалобы в трудовую инспекцию - до <b>2000</b> рублей </li>
-											<li>Помощь в оформлении патента на работу - до <b>2000</b> рублей </li>
-											<li>Защита прав в суде в случае незаконного увольнения - до <b>5000</b> рублей </li>
-											<li>Проверка трудового договора - до <b>1000</b> рублей </li>
-											<li>Консультации по декретному отпуску - до <b>2200</b> рублей</li>
+											<li>Подготовка и подача иска на взыскание алиментов - до <b>4000</b> рублей</li>
+											<li>Представительство в суде - до <b>1500</b> рублей (за 1 заседание) </li>
+												<li>Лишение родительских прав - до <b>14 300</b> рублей (под ключ) </li>
+												<li>Бракоразводные процессы - до <b>15 000</b> рублей (под ключ) </li>
+												<li>Составление договоров - до <b>3000</b> рублей</li>
+											<li>Признание отцовства - до <b>5000</b> рублей </li>
+												<li>Усыновление - до <b>25 000</b> рублей</li>
+											<li>Наследство - до <b>23 700</b> рублей</li>
 										</ul>
 									</div>
 									
 								</div>
 								
 							</div>
-							<div class="modal-overlay other">
-								<div class="modal other">
-									<a class="close-modal">
-										<svg viewBox="0 0 20 20">
-											<path fill="#000000" d="M15.898,4.045c-0.271-0.272-0.713-0.272-0.986,0l-4.71,4.711L5.493,4.045c-0.272-0.272-0.714-0.272-0.986,0s-0.272,0.714,0,0.986l4.709,4.711l-4.71,4.711c-0.272,0.271-0.272,0.713,0,0.986c0.136,0.136,0.314,0.203,0.492,0.203c0.179,0,0.357-0.067,0.493-0.203l4.711-4.711l4.71,4.711c0.137,0.136,0.314,0.203,0.494,0.203c0.178,0,0.355-0.067,0.492-0.203c0.273-0.273,0.273-0.715,0-0.986l-4.711-4.711l4.711-4.711C16.172,4.759,16.172,4.317,15.898,4.045z"></path>
-										</svg>
-									</a>
-									<div class="modal-content">
-										<h3>Прочие услуги</h3>
-										<i>Актуальные услуги:</i> 
-										<ul>
-											<li>Регистрация юридических лиц ООО/Ип - до <b>5000</b> рублей </li>
-											<li>Внесение изменений в ЕГРЮЛ и ЕГРИП- до <b>5000</b> рублей </li>
-											<li>Сопровождение сделок юридических лиц - до <b>40 000</b> рублей </li>
-											<li>Консультация иностранных граждан по вопросам РВП/ВНЖ/Гражданства - до <b>2000</b> рублей </li>
-											<li>Предоставление Выписки и ЕГРЮЛ за 1 час - <b>600</b> рублей</li>
-										</ul>
+							<div class="modal-overlay work">
+									<div class="modal work">
+										<a class="close-modal">
+											<svg viewBox="0 0 20 20">
+												<path fill="#000000" d="M15.898,4.045c-0.271-0.272-0.713-0.272-0.986,0l-4.71,4.711L5.493,4.045c-0.272-0.272-0.714-0.272-0.986,0s-0.272,0.714,0,0.986l4.709,4.711l-4.71,4.711c-0.272,0.271-0.272,0.713,0,0.986c0.136,0.136,0.314,0.203,0.492,0.203c0.179,0,0.357-0.067,0.493-0.203l4.711-4.711l4.71,4.711c0.137,0.136,0.314,0.203,0.494,0.203c0.178,0,0.355-0.067,0.492-0.203c0.273-0.273,0.273-0.715,0-0.986l-4.711-4.711l4.711-4.711C16.172,4.759,16.172,4.317,15.898,4.045z"></path>
+											</svg>
+										</a>
+										<div class="modal-content">
+											<h3>Трудовое право</h3>
+											<i>Актуальные услуги:</i> 
+											<ul>
+												<li>Урегулирование споров с работодателем по выплате з/п - до <b>5000</b> рублей</li>
+												<li>Составление жалобы в трудовую инспекцию - до <b>2000</b> рублей </li>
+												<li>Помощь в оформлении патента на работу - до <b>2000</b> рублей </li>
+												<li>Защита прав в суде в случае незаконного увольнения - до <b>5000</b> рублей </li>
+												<li>Проверка трудового договора - до <b>1000</b> рублей </li>
+												<li>Консультации по декретному отпуску - до <b>2200</b> рублей</li>
+											</ul>
+										</div>
+										
 									</div>
 									
 								</div>
-								
+								<div class="modal-overlay other">
+									<div class="modal other">
+										<a class="close-modal">
+											<svg viewBox="0 0 20 20">
+												<path fill="#000000" d="M15.898,4.045c-0.271-0.272-0.713-0.272-0.986,0l-4.71,4.711L5.493,4.045c-0.272-0.272-0.714-0.272-0.986,0s-0.272,0.714,0,0.986l4.709,4.711l-4.71,4.711c-0.272,0.271-0.272,0.713,0,0.986c0.136,0.136,0.314,0.203,0.492,0.203c0.179,0,0.357-0.067,0.493-0.203l4.711-4.711l4.71,4.711c0.137,0.136,0.314,0.203,0.494,0.203c0.178,0,0.355-0.067,0.492-0.203c0.273-0.273,0.273-0.715,0-0.986l-4.711-4.711l4.711-4.711C16.172,4.759,16.172,4.317,15.898,4.045z"></path>
+											</svg>
+										</a>
+										<div class="modal-content">
+											<h3>Прочие услуги</h3>
+											<i>Актуальные услуги:</i> 
+											<ul>
+												<li>Регистрация юридических лиц ООО/Ип - до <b>5000</b> рублей </li>
+												<li>Внесение изменений в ЕГРЮЛ и ЕГРИП- до <b>5000</b> рублей </li>
+												<li>Сопровождение сделок юридических лиц - до <b>40 000</b> рублей </li>
+												<li>Консультация иностранных граждан по вопросам РВП/ВНЖ/Гражданства - до <b>2000</b> рублей </li>
+												<li>Предоставление Выписки и ЕГРЮЛ за 1 час - <b>600</b> рублей</li>
+											</ul>
+										</div>
+										
+									</div>
+									
+								</div>
+
+							<!-- Modal window with price -->
+
+		</section>
+
+		<section class="section reviews" id="reviews">
+			<div class="section__description">
+				<h2 class="section__title">Остались вопросы? Узнайте ответы!</h2>
+			</div>
+				<div class="container reviews__container">
+					<div class="reviews__content">
+						<div class="reviews__item">
+							<img src="img/questions.png" alt="rev-icon" class="reviews__icon">
+							<div class="reviews__text">
+									<b class="question">Что делать, если я свободна только вечером, после 19:00?</b><br>
+									
+									<p class="answer">- Мы работаем ежедневно, с 7:00 до 22:00. Время встречи строго оговаривается и напрямую зависит от желания клиента. Укажите его в заявке, и наш специалист не заставит себя ждать.</p>
+									
+									<b class="question">Сколько стоит услуга вызова юриста на дом?</b>
+									
+									<p class="answer">- Вызов и первичная консультация – бесплатно. Если клиента все устраивает, заключается договор и юрист приступает к выполнению поставленной задачи. В противном случае – обе стороны расходятся без претензий и оплаты.</p>
+									<b class="question">Опасаюсь, что стоимость услуги окажется мне «не по карману»?</b>
+									
+									<p class="answer">- В рубрике «Услуги и цены» вы можете заранее ознакомиться с прейскурантом.</p>
 							</div>
-
-						<!-- Modal window with price -->
-
-	</section>
-	<section class="reviews" id="reviews">
-		<div class="reviews__desc"><h2 class="section__title">Отзывы</h2></div>
-			<div class="container">
-				<div class="reviews__content">
-					<div class="reviews__item">
-						<img src="img/blockqoute-1.png" alt="rev-icon" class="reviews__icon">
-						<div class="reviews__text">
-							<blockquote class="blockquote">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium ducimus itaque distinctio repudiandae, id officiis hic illo ab laboriosam. Minima molestiae a voluptatum cum ullam odio facilis, veniam nostrum? Omnis magnam officiis aliquid velit voluptatum. Nostrum fugit dolores tenetur eaque.</blockquote>
 						</div>
-						<b class="reviews__author">Иван Иванов</b>
-					</div>
-					<div class="reviews__item">
-						<img src="img/blockqoute-1.png" alt="rev-icon" class="reviews__icon">
-						<div class="reviews__text">
-							<blockquote class="blockquote">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium ducimus itaque distinctio repudiandae, id officiis hic illo ab laboriosam. Minima molestiae a voluptatum cum ullam odio facilis, veniam nostrum? Omnis magnam officiis aliquid velit voluptatum. Nostrum fugit dolores tenetur eaque.</blockquote>
+						<div class="reviews__item">
+							<img src="img/questions.png" alt="rev-icon" class="reviews__icon">
+							<div class="reviews__text">
+									<b class="question">Что такое стоимость услуги ДО?</b>
+									
+									<p class="answer">- Это максимальная цена. При заключении договора она может колебаться в сторону уменьшения. Зависит от сложности ситуации, наличия дополнительной документации, необходимости уточнения достоверности сведений и т. д.</p>
+
+									<b class="question">- Проживаю в городе Одинцово, могу ли я рассчитывать на ваш приезд?</b>
+									
+									<p class="answer">- Да, специалист компании приедет к вам. География нашей деятельности – г. Москва и Московская область.</p>
+									
+									<b class="question">Почему именно на дом, а если я хочу встретиться в кафе?</b>
+									
+									<p class="answer">- Если не опасаетесь случайной утечки информации, то юрист готов обсудить все вопросы в другом, удобном месте.</p>
+									
+									<b class="question">А если ваш представитель не сможет разобраться в моей ситуации?</b>
+									
+									<p class="answer">- Юристы нашей компании – это специалисты, которые грамотно и успешно применяют теоретические знания на практике. Десятилетний опыт ведения разнообразных дел клиентов подтверждает, что из любой ситуации существует достойный выход.</p>
+							</div>
 						</div>
-						<b class="reviews__author">Иван Иванов</b>
 					</div>
 				</div>
-			</div>
-	</section>
+		</section>
 
-	<section class="contact-us" id="contact-us">
-			<div class="contact-us__desc"><h2 class="section__title">Связаться с нами</h2></div>
-			<div class="container">
-				<div class="contact-us__content">
-					<form action="" class="form" id="form" name="form">
-							<input type="text" placeholder="Имя" class="form__input username">
-							<input type="text" placeholder="Email" class="form__input useremail">
-							<textarea placeholder="Опишите Ваш случай" class="form__input message"></textarea>
-							<button type="submit" class="btn">Отправить</button>
-					</form>
-					<div class="adress">
-						<h4 class="adress__title">Контакты:</h4>
-						<ul class="adress__list">
-							<li class="adress__item"><span class="bold">Адрес: </span>г. Москва ул. Новавя д.1</li>
-							<li class="adress__item"><span class="bold">Email: </span>12345@mail.ru</li>
-							<li class="adress__item"><span class="bold">Телефон: </span><a href="tel" <div class="phonenumber__link">+7 (999) 999-99-99</a></li>
-						</ul>
+		<section class="section contact-us" id="contact-us">
+				<div class="section__description">
+					<h2 class="section__title">Связаться с нами</h2>
+				</div>
+				<div class="container contact-us__container">
+					<div class="contact-us__content">
+						<div class="form">
+							<form action="" class="form__elem" id="form" name="form__elem">
+								<div class="form__row">
+									<input type="text" placeholder="Имя" class="form__input username">
+								</div>
+								<div class="form__row">
+									<input type="text" placeholder="Email" class="form__input useremail">
+								</div>
+								<div class="form__row">
+									<textarea placeholder="Опишите Ваш случай" class="form__input message"></textarea>
+								</div>
+									<button type="submit" class="btn btn--form">Отправить</button>
+							</form>
+						</div>
+						<div class="adress">
+							<h4 class="adress__title">Контакты:</h4>
+							<ul class="adress__list">
+								<li class="adress__item"><span class="bold">Адрес: </span>г. Москва ул. Новавя д.1</li>
+								<li class="adress__item"><span class="bold">Email: </span>12345@mail.ru</li>
+								<li class="adress__item"><span class="bold">Телефон: </span><a href="tel" class="phone__link phone__link--black">+7 (999) 999-99-99</a></li>
+							</ul>
+						</div>
 					</div>
 				</div>
 				<div class="footer__text">Ilegal. Юридическая помощь на дому. 2017</div>
-			</div>
-	</section>
+		</section>
+	</div>
+
 	<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js'></script>
 	<script src="js/index.js"></script>
 </body>

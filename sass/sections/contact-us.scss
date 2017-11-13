@@ -1,0 +1,90 @@
+.contact-us {
+  background: url("../img/phone-bg.jpg") no-repeat;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-size: cover;
+  background-blend-mode: multiply;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-us__container {
+  height: 100%;
+}
+
+.contact-us__content {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+
+.form {
+  flex-basis: 40%;
+}
+
+.form__row {
+  width: 100%;
+}
+
+
+.form__input {
+  width: 100%;
+  height: rem(60px);
+  padding: rem(10px);
+  margin-bottom: rem(20px);
+  color: #84868a;
+  border: 1px solid #84868a;
+  border-radius: 3px;
+  background: transparent;
+  outline: none;
+  font-size: 15px;
+  line-height: 27px;
+  resize: none;
+
+  &:hover {
+    border-color: #fff;
+    color: #fff; 
+  }
+}
+
+.message {
+  min-height: 122px; 
+  margin-bottom: 0;
+}
+
+.adress {
+  color: #000;
+  background-color: rgba(197, 230, 242, 0.714);
+  flex-basis: 40%;
+  text-align: center;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.adress__list {
+  display: block;
+  text-align: left;
+  list-style: none;
+  padding: 0;
+}
+
+.adress__item {
+  margin-top: 20px; 
+}
+
+.bold {
+  color: #000;
+  font-size: 1em;
+  font-weight: bold;
+  font-style: italic; 
+}
+
+
+.footer__text {
+  color: grey;
+  text-align: center;
+}

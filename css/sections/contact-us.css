@@ -1,0 +1,51 @@
+.form__input {
+  height: 60px;
+  padding-left: 20px;
+  margin: 20px auto;
+  color: #84868a;
+  border: 1px solid #84868a;
+  border-radius: 3px;
+  display: block;
+  background: transparent;
+  outline: none;
+  width: 400px;
+  font-size: 15px;
+  line-height: 27px;
+  resize: none; }
+
+.form__input:hover, .form__input:focus {
+  border-color: #fff;
+  color: #fff; }
+
+.message {
+  min-height: 120px; }
+
+.adress {
+  float: right;
+  width: 500px;
+  height: 280px;
+  color: #000;
+  margin-top: 120px;
+  background-color: rgba(197, 230, 242, 0.714);
+  padding-top: 35px; }
+
+.adress__list {
+  width: 300px;
+  display: block;
+  text-align: left;
+  list-style: none;
+  padding: 0;
+  margin: 10px auto; }
+
+.adress__item {
+  margin-top: 20px; }
+
+.bold {
+  color: #000;
+  font-size: 1em;
+  font-weight: bold;
+  font-style: italic; }
+
+.footer__text {
+  color: grey;
+  text-align: center; }
