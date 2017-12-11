@@ -47,6 +47,9 @@
     line-height: 32px;
     transform: translateY(20px) scale(0);
     transition: transform .3s ease;
+    @include phones {
+      transform: translateY(-20px) scale(1);
+    }
   }
   &--form {
     border: none;

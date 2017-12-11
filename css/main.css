@@ -70,6 +70,14 @@
   transition: transform .3s ease, -webkit-transform .3s ease;
 }
 
+@media screen and (max-width: 480px) {
+  .btn--small {
+    -webkit-transform: translateY(-20px) scale(1);
+    -ms-transform: translateY(-20px) scale(1);
+    transform: translateY(-20px) scale(1);
+  }
+}
+
 .btn--form {
   border: none;
   outline: none;
@@ -922,7 +930,7 @@ p {
 
 @media screen and (max-width: 480px) {
   .adress {
-    padding: 30px 10px;
+    display: none;
   }
 }
 
