@@ -6,14 +6,19 @@
 
 .prices__container {
   height: 100%;
+  padding: 100px 0;
 }
 
 .catalog {
-  height: 100%;;
+  height: 100%;
   width: 100%;
   display: flex;
   justify-content: space-around;
-  align-items: center; 
+  align-items: center;
+  flex-wrap: wrap;
+  @include phones {
+    flex-direction: column;
+  }
 }
 
 .catalog__item {
@@ -25,40 +30,42 @@
   background-size: cover;
   border-radius: 3px;
   transition: transform .2s ease;
-  transition: transform .2s ease, -webkit-transform .2s ease; 
+  transition: transform .2s ease, -webkit-transform .2s ease;
   text-align: center;
-
   &--work {
     background-image: url("../img/work.jpg");
     background-repeat: no-repeat;
     background-position-x: -100px;
   }
-
   &--family {
     background-image: url("../img/family.jpg");
-    background-position: center; 
+    background-position: center;
   }
-
   &--city {
     background-image: url("../img/const.jpg");
     background-position: center;
   }
-
   &--other {
     background-image: url("../img/home.jpg");
     background-position-x: 55%;
   }
-
   &:hover {
     box-shadow: 0 5px 5px 0 #000;
     transform: scale(1.05);
     .btn--small {
-      transform: translateY(-30px) scale(1); 
+      transform: translateY(-30px) scale(1);
     }
+  }
+  @include tablets {
+    flex-basis: 45%;
+    margin: 10px;
+  }
+  @include phones {
+    width: 100%;
   }
 }
 
 .catalog__text {
-  font-size: 2em; 
+  font-size: 2em;
   margin: rem(100px) auto;
 }

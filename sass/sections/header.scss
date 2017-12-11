@@ -2,13 +2,12 @@
   background: url('../img/main-bg.jpg') center center no-repeat;
   background-color: rgba(0, 0, 0, .7);
   background-size: cover;
-  background-blend-mode: multiply; 
+  background-blend-mode: multiply;
   width: 100%;
-  height: 100%;
   text-align: center;
 }
 
-.header__container{
+.header__container {
   height: 100%;
   padding-bottom: 10%;
 }
@@ -19,16 +18,20 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @include phones {
+    flex-direction: column;
+  }
 }
 
 .nav__bar {
   display: flex;
+  @include tablets {
+    display: none;
+  }
 }
 
 .nav__item {
   margin-right: rem(20px);
-  
-
   &:last-child {
     margin-right: 0;
   }
@@ -41,15 +44,13 @@
   color: $blue;
   font-size: 1rem;
   width: rem(120px);
-  height: rem(25px); 
+  height: rem(25px);
   line-height: rem(27px);
   border-radius: 3px;
-
   &:hover {
     background-color: $blue;
     color: #fff;
   }
-
 }
 
 .phone {
@@ -57,6 +58,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @include phones {
+    margin-top: 30px;
+  }
 }
 
 .phone__link {
@@ -65,7 +69,6 @@
   font-size: 1.1rem;
   font-style: italic;
   font-weight: bold;
-
   &--black {
     color: #000;
   }

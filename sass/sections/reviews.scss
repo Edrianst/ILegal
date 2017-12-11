@@ -1,6 +1,6 @@
 .reviews {
   background: url("../img/ques-bg.jpg") center center no-repeat;
-  background-size: cover; 
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8,13 +8,17 @@
 
 .reviews__container {
   height: 100%;
+  padding: 100px 0;
 }
 
 .reviews__content {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center; 
+  align-items: center;
+  @include phones {
+    flex-direction: column;
+  }
 }
 
 .reviews__item {
@@ -23,16 +27,26 @@
   flex-basis: 45%;
   text-align: left;
   padding: 3%;
-  background-color: rgba(197, 230, 242, 0.714); }
+  background-color: rgba(197, 230, 242, 0.714);
+  @include tablets {
+    flex-basis: 49%;
+  }
+  @include phones {
+    margin-bottom: 20px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
 
 .reviews__text {
   margin: 1rem 0;
-  line-height: rem(30px); 
+  line-height: rem(30px);
 }
 
 .reviews__icon {
   width: rem(30px);
-  height: rem(30px); 
+  height: rem(30px);
 }
 
 .question {
@@ -42,5 +56,3 @@
 .answer {
   font-style: italic;
 }
-
-
